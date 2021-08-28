@@ -2,11 +2,7 @@ package com.bridgelabz.datastructureprograms;
 
 public class MyNode<T> {
 
-	  
-	@Override
-	public String toString() {
-		return "MyNode [data=" + data + ", key=" + key + ", next=" + next + "]";
-	}
+
 	String data;
 	  String key;
 	 MyNode next;
@@ -29,7 +25,11 @@ public class MyNode<T> {
 		this.next = next;
 	}
 
-	
+	  
+	@Override
+	public String toString() {
+		return "MyNode [data=" + data + ", key=" + key + ", next=" + next + "]";
+	}
 	
 
 }
