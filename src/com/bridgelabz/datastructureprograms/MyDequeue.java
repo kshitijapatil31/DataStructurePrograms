@@ -56,6 +56,7 @@ public class MyDequeue <T>{
 		size--;
 		return ptr;
 	}
+	
 	public boolean isEmpty() {
 		if(front==null) 
 			return true;
@@ -65,5 +66,20 @@ public class MyDequeue <T>{
 	}
 	public int size() {
 		return size;
+	}
+	public void print() {
+		Dequeue ptr=null;
+		System.out.println("Available balance=");
+		if(size==0) {
+			System.out.println("empty");
+			return;
+			
+		}
+		Dequeue temp=front;
+		while(temp!=null) {
+			
+			System.out.println(temp.data);
+			temp=temp.next;
+		}
 	}
 }
